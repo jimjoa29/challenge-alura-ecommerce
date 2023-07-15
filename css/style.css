@@ -180,7 +180,8 @@ a {
 .contenedor__productos {
     width: 100%;
     display: flex;
-    gap: 36px;
+    justify-content: center;
+    gap: 30px;
 }
 
 
