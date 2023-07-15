@@ -19,6 +19,7 @@
 }
 
 body {
+  
     background-color: var(--color-white);
     font-family: 'Poppins', sans-serif;
 }
@@ -29,14 +30,12 @@ a {
 }
 
 .container {
-    width: 95%;
-    max-width: 1255px;
-    padding: 0 40px;
+    width: 80%;    
     margin: auto;
 }
 
 .menu-header {
-    width: 100%;
+   
     margin: 0 auto;
     height: 80px;
     display: flex;
@@ -110,7 +109,7 @@ a {
 /* Presentacion */
 .presentacion {
     width: 100%;
-    /* min-width: 768px; */
+    min-width: 768px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Hero-img.png');
     background-size: cover;
     height: 350px;
@@ -150,6 +149,7 @@ a {
 /* Productos */
 .main {
     margin-top: 50px 0;
+    
 }
 
 .star__wars {
@@ -178,17 +178,15 @@ a {
 }
 
 .contenedor__productos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    width: 100%;
+    display: flex;
+    gap: 36px;
 }
 
-.contenedor__productos__individual {
-    margin-bottom: 30px;
-}
+
 
 .card {
-    width: calc(95% / 6%);
+    
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -244,16 +242,21 @@ a {
 
 /* Formulario */
 /* Footer */
-
 .formulario {
-    width: 100%;
+    width: 100% ;
     height: 400px;
-    margin: 0 auto;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
+   
     background-color: var(--color-light-blue);
+    
+    margin: 0 auto;
+    margin-top: 50px
+    
+}
 
+.container__formulario {    
+    display: flex;
+    justify-content: space-between;    
+    padding: 50px 0 ;
 }
 
 .formulario__menu {
@@ -341,14 +344,15 @@ a {
     background-color: var(--color-white);
     color: #605e5e;
     font-size: 0.9rem;
+    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
     .container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 10px;
         overflow: hidden;
     }
 
@@ -367,10 +371,7 @@ a {
         justify-content: center;
     }
 
-    .card {
-        width: 166px;
-    }
-
+   
     .formulario {
         justify-content: space-between;
         padding: 30px 20px;
@@ -417,12 +418,12 @@ a {
     }
 
     .card {
-        width: auto;
-        height: 300px;
+        width: calc(90% / 4%);
+        height: 280px;
     }
 
     .card__img {
-        height: 200px;
+        height: auto ;
     }
 
     .formulario {
@@ -431,13 +432,17 @@ a {
         align-items: center;
         height: auto;
     }
-
+ 
     .formulario__menu {
         margin-right: 0;
     }
 
     .formulario__menu ul {
         text-align: center;
+    }
+
+    .formulario__logo__menu{
+        flex-direction: column;
     }
 
     .formulario__formulario {
