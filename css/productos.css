@@ -1,6 +1,6 @@
 :root {
     --color-white: #F5F5FE;
-    --color-grey: #CCCCCC;
+    --color-grey: #e3e1e1;
     --color-light-blue: #E3EEFD;
     --color-blue: #2A7AE4;
     --color-dark-blue: #1B65C5;
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: var(--color-white);
+    background-color: var(--color-grey);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -35,6 +35,10 @@ a {
     margin: auto;
 }
 
+.header {
+    
+}
+
 .menu-header {
     width: 100%;
     margin: 0 auto;
@@ -42,6 +46,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-white);
 }
 
 .menu__contenedor {
@@ -88,11 +93,16 @@ a {
     cursor: pointer;
 }
 
-.bnt__login {
-    padding: 6px 40px;
+.productos__titulo  {
+    
+}
+
+.productos__boton {
+    padding: 6px 25px;
     border: 2px solid var(--color-dark-blue);
     border-radius: 5px;
-    color: var(--color-dark-blue);
+    color: var(--color-white);
+    background-color: #1B65C5;
     font-size: 1.1rem;
     cursor: pointer;
 }
@@ -166,6 +176,7 @@ a {
     display: flex;
     gap: 10px;
     justify-content: space-between;
+
     margin-bottom: 20px;
     color: var(--color-dark-blue);
 }
@@ -417,7 +428,7 @@ a {
     }
 
     .card {
-        width: auto;
+        width: 210px;
         height: 300px;
     }
 
