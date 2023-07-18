@@ -30,7 +30,7 @@ a {
 }
 
 .container {
-    width: 80%;    
+    width: 85%;    
     margin: auto;
 }
 
@@ -45,6 +45,7 @@ a {
 
 .menu__contenedor {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 30px;
 }
@@ -178,16 +179,18 @@ a {
 }
 
 .contenedor__productos {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: row;   
+    align-items: center;
+    gap: 1.47rem;
+    /* padding: 1rem; */
+    
 }
 
 
 
 .card {
-    
+   
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -202,7 +205,7 @@ a {
 }
 
 .card__img {
-    /* width: 100%; */
+    width: calc(85% / 6%);
     height: 160px;
 
 }
@@ -348,30 +351,31 @@ a {
     
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
 
     .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 10px;
-        overflow: hidden;
+        width: 90%;
+        /* margin: 0 auto; */
+        /* padding: 0 10px; */
+        
     }
-
-    .menu-header {
-        justify-content: space-around;
-        padding: 0;
-        margin: 0;
-
+    .btn__login {
+        margin-right: 40px;
     }
 
     .menu__contenedor {
-        gap: 10px;
+        gap: 30px;
+        overflow-x: hidden;
     }
 
     .presentacion {
         justify-content: center;
     }
 
+    .card {
+        width: 100%;
+
+    }
    
     .formulario {
         justify-content: space-between;
@@ -390,7 +394,7 @@ a {
     }
 }
 
-@media screen and (max-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 575px) and (max-width: 767px) {
     .menu__contenedor__input {
         display: none;
     }
